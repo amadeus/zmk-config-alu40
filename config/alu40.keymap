@@ -25,8 +25,6 @@
         &kp LSHFT      &kp Z     &kp X     &kp C  &kp V      &kp B      &kp N  &kp M      &kp COMMA        &kp DOT           &kp FSLH  &kp RIGHT_SHIFT
        &kp ESCAPE  &kp LCTRL  &kp LALT  &kp LGUI  &mo 1  &kp SPACE  &kp SPACE  &mo 2  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RIGHT_CONTROL        &kp ENTER
             >;
-
-            sensor-bindings;
         };
 
         lower {
@@ -36,8 +34,6 @@
 &kp COMMA    &kp LESS_THAN        &kp GT     &kp EQUAL     &kp MINUS  &kp UNDERSCORE      &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp PERIOD
    &trans           &trans        &trans        &trans        &trans          &trans        &trans           &mo 3           &trans                &trans                 &trans         &trans
             >;
-
-            sensor-bindings;
         };
 
         raise {
@@ -47,8 +43,6 @@
 &trans   &none     &none        &none          &none    &none     &none     &none         &none      &none   &none   &trans
 &trans  &trans    &trans       &trans          &mo 3   &trans    &trans    &trans        &trans     &trans  &trans   &trans
             >;
-
-            sensor-bindings;
         };
 
         adjust {
@@ -58,8 +52,6 @@
    &kp LEFT_SHIFT   &none   &none  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN        &kp K_MUTE      &none  &kp PRINTSCREEN  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &kp RIGHT_SHIFT
        &sys_reset  &trans  &trans                &trans             &trans         &kp SPACE  &kp SPACE           &trans        &trans        &trans        &trans      &bootloader
             >;
-
-            sensor-bindings;
         };
     };
 };
