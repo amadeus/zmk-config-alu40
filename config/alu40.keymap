@@ -13,11 +13,11 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // | ESC/~ |  Q   |  W   |  E   |  R   |  T   |   Y   |  U    |  I   |  O   |   P   | BSPC  |
-            // | TAB   |  A   |  S   |  D   |  F   |  G   |   H   |  J    |  K   |  L   |   ;   |  '    |
-            // | SHIFT |  Z   |  X   |  C   |  V   |  B   |   N   |  M    |  ,   |  .   |   /   |RET/SFT|
-            // | PLAY  | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LARW | UARW | DARW  |  RARW |
+            // ----------------------------------------------------------------------------------
+            // | TAB   | Q    | W    | E    | R    | T | Y | U    | I    | O    | P     | BSPC  |
+            // | RCTRL | A    | S    | D    | F    | G | H | J    | K    | L    | ;     | '     |
+            // | SHIFT | Z    | X    | C    | V    | B | N | M    | ,    | .    | /     | RSHIFT|
+            // | ESC   | LCTL | LALT | LGUI | LOWR | SPACE | RAIS | RGUI | RALT | RCTRL | RETRN |
 
             bindings = <
           &kp TAB      &kp Q     &kp W     &kp E  &kp R      &kp T      &kp Y  &kp U          &kp I          &kp O              &kp P         &kp BSPC
@@ -28,6 +28,12 @@
         };
 
         lower {
+            // -------------------------------------------------------------------------
+            // |  ~  |  !  |  @  |  #  |  $  |  %  |  ^  | &   |  *  |  (  |  )  |  |  |
+            // |  `  |  1  |  2  |  3  |  4  |  5  |  6  | 7   |  8  |  9  |  0  |  \  |
+            // |  ,  |  Z  |  X  |  C  |  V  |  B  |  N  | M   |  ,  |  .  |  /  |  .  |
+            // |     |     |     |     |     |           | ADJ |     |     |     |     |
+
             bindings = <
 &kp TILDE  &kp EXCLAMATION   &kp AT_SIGN     &kp POUND    &kp DOLLAR     &kp PERCENT     &kp CARET   &kp AMPERSAND     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS       &kp PIPE
 &kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_7     &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0  &kp BACKSLASH
@@ -37,6 +43,12 @@
         };
 
         raise {
+            // ----------------------------------------------------------------------
+            // |   |   |      |      |      |     |      |      |    |      |   |   |
+            // |   |   | HOME | PGUP | PGDN | END | LEFT | DOWN | UP | RGHT |   |   |
+            // |   |   |      |      |      |     |      |      |    |      |   |   |
+            // |   |   |      |      | ADJ  |            |      |    |      |   |   |
+
             bindings = <
 &trans   &none     &none        &none          &none    &none     &none     &none         &none      &none   &none  &kp DEL
 &trans   &none  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT   &none    &none
@@ -46,6 +58,12 @@
         };
 
         adjust {
+            // ----------------------------------------------------------------------
+            // |       | F1 | F2 | F3    | F4     | F5   | F6 | F7      | F8   |  F9  | F10    | F11   |
+            // | RCTRL |    |    | BR_UP | VOL_UP | PLAY |    | CAPS    | BT_0 | BT_1 | BT_3   | F12   |
+            // | RSHFT |    |    | BR_DN | VOL_DN | MUTE |    | PR_SCRN | BT_4 | BT_5 | BT_CLR | LSHFT |
+            // |       |    |    |       |        |           |         |      |      |        |       |
+
             bindings = <
            &trans  &kp F1  &kp F2                &kp F3             &kp F4            &kp F5     &kp F6           &kp F7        &kp F8        &kp F9       &kp F10          &kp F11
 &kp RIGHT_CONTROL   &none   &none  &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP  &kp C_PLAY_PAUSE      &none     &kp CAPSLOCK  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &kp F12
