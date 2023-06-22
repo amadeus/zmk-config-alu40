@@ -8,6 +8,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS SPACE>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
