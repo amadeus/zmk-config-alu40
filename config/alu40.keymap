@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS SPACE BSPC>;
+    continue-list = <UNDERSCORE MINUS BSPC>;
 };
 
 / {
