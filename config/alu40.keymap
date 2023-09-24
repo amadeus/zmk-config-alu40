@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS SPACE BSPC>;
+    continue-list = <UNDERSCORE MINUS BSPC>;
 };
 
 / {
