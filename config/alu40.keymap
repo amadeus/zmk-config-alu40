@@ -13,6 +13,15 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_caps_word {
+            timeout-ms = <1000>;
+            key-positions = <24 35>;
+            bindings = <&caps_word>;
+        };
+    };
+
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
