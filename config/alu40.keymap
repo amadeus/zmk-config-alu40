@@ -68,17 +68,17 @@
         };
 
         raise {
-            // ----------------------------------------------------------------------
-            // |   |   |      |      |      |     |      |      |    |      |   |   |
-            // |   |   | HOME | PGUP | PGDN | END | LEFT | DOWN | UP | RGHT |   |   |
-            // |   |   |      |      |      |     |      |      |    |      |   |   |
-            // |   |   |      |      | ADJ  |            |      |    |      |   |   |
+            // -------------------------------------------------------------------------
+            // |   |      |       |        |        |     |      |      |    |      |   |   |
+            // |   | MENU | HOME  | PGUP   | PGDN   | END | LEFT | DOWN | UP | RGHT |   |   |
+            // |   |      | PAUSE | SCRLCK | INSERT |     |      |      |    |      |   |   |
+            // |   |      |       |        | ADJ    |            |      |    |      |   |   |
 
             bindings = <
-                &trans   &none   &none     &none        &none          &none     &none     &none     &none         &none      &none   &kp DEL
-                &trans   &none   &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none   &none
-                &trans   &none   &none     &none        &none          &none     &none     &none     &none         &none      &none   &trans
-                &trans   &trans  &trans    &trans       &mo 3          &trans    &trans    &trans    &trans        &trans     &trans  &trans
+                &trans   &none        &none            &none           &none          &none     &none     &none     &none         &none      &none   &kp DEL
+                &trans   &kp K_CMENU  &kp HOME         &kp PAGE_UP     &kp PAGE_DOWN  &kp END   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none   &none
+                &trans   &none        &kp PAUSE_BREAK  &kp SCROLLLOCK  &kp INSERT     &none     &none     &none     &none         &none      &none   &trans
+                &trans   &trans       &trans           &trans          &mo 3          &trans    &trans    &trans    &trans        &trans     &trans  &trans
             >;
         };
 
