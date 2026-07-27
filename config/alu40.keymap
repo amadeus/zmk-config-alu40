@@ -34,7 +34,7 @@
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            display-name = "Bootloader";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             // Force bootloader to require 5 taps to prevent accidental
@@ -43,7 +43,7 @@
         };
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
+            display-name = "Bluetooth Disconnect";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             // Disconnect from typical iPad connection default press, require a
@@ -53,7 +53,7 @@
         };
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_2";
+            display-name = "Reset";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             // Only allow reset to happen after 5 taps

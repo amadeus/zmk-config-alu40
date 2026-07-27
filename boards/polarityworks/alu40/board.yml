@@ -1,0 +1,7 @@
+board:
+  name: alu40
+  vendor: polarityworks
+  socs:
+    - name: nrf52840
+      variants:
+        - name: zmk

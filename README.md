@@ -1,14 +1,23 @@
 # ALU40 ZMK Repository
 
-## Instructions
+This repository contains an ALU40 user keymap and its board definition. The
+board has been converted to Zephyr Hardware Model V2 for the ZMK v0.4.0 release
+candidate and builds as `alu40//zmk`.
+
+## Building
 
 1. [Fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository).
-2. [Click the **Actions** tab and make sure the workflow is enabled](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow#enabling-a-workflow).
-3. Make sure the `alu40-module` project in [`config/west.yml`](config/west.yml) still works. The `boards/arm/alu40` folder will be downloaded from this URL.
-4. If there is still a `boards/arm/alu40` folder in your fork, delete it.
+2. [Enable the GitHub Actions workflow](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow).
+3. Push a change or run the workflow manually. It builds normal, ZMK Studio,
+   and settings-reset firmware.
 
-**If you already have a ZMK config repository, [you can add this one as a module instead of forking](https://zmk.dev/docs/features/modules#building-with-modules).**
+ZMK and the reusable build workflow are pinned to the exact pending v0.4.0
+release commit in [`config/west.yml`](config/west.yml) and
+[`.github/workflows/build.yml`](.github/workflows/build.yml).
 
 ## Notes
 
-[`config/alu40.keymap`](config/alu40.keymap) contains [several reserved layers labeled `extra1-4`](https://zmk.dev/docs/features/studio#including-extra-layers) for use with [ZMK Studio](https://zmk.studio). If you intend to use [Keymap Editor](https://nickcoutsos.github.io/keymap-editor), these will need to be removed.
+The keymap currently has no `&studio_unlock` binding. To regain access to
+[ZMK Studio](https://zmk.studio), temporarily uncomment
+`CONFIG_ZMK_STUDIO_LOCKING=n` in [`config/alu40.conf`](config/alu40.conf), flash
+the Studio firmware, add an unlock binding, and then restore locking.
