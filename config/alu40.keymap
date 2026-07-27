@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+/*
+ * Compensate for the repeatable 96% full-charge report seen across multiple
+ * fresh batteries. The upstream board assumes a 2.000 divider ratio; this
+ * applies a conservative 0.8% reporting correction.
+ */
+&vbatt {
+    full-ohms = <201600>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
