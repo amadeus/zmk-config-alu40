@@ -1,0 +1,14 @@
+file_format: "1"
+id: alu40//zmk
+name: ALU40
+type: board
+arch: arm
+features:
+  - keys
+  - encoder
+  - underglow
+  - studio
+outputs:
+  - usb
+  - ble
+url: https://huibenlab.com/products/alu40-v2

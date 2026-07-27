@@ -3,13 +3,9 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
-    - name: alu40-module
-      url: https://github.com/polarityworks/zmk-config-alu40
-      revision: main
-      clone-depth: 1
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: 61291c58fd3c982a884f940776b169d1fce14fc8
       import: app/west.yml
   self:
     path: config

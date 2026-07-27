@@ -1,5 +1,5 @@
 identifier: alu40
-name: alu40
+name: ALU40
 type: mcu
 arch: arm
 toolchain:
